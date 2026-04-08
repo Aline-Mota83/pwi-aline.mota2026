@@ -1,0 +1,48 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu principal */
+.menu {
+    display: flex;
+    justify-content: space-between; /* separa logo e menu */
+    align-items: center;
+    background-color: #eee;
+    padding: 15px 30px;
+}
+
+/* Logo */
+.logo {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Lista */
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* espaço entre os itens */
+}
+
+/* Links */
+.menu-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover (efeito ao passar o mouse) */
+.menu-links a:hover {
+    color: red;
+}
+
+/* Item ativo (Início) */
+.menu-links .ativo {
+    color: red;
+    font-weight: bold;
+}
