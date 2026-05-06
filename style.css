@@ -40,6 +40,135 @@
 .menu-links a:hover {
     color: red;
 }
+.contato{
+    background-color: #f6f4f4;
+    color: #a8001c;
+    text-align: center;
+    padding: 40px 20px;
+}
+.contato h1{
+    font-size: 35px;
+    color: red;
+    margin-bottom: 20px;
+}
+.info-contato{
+    margin-bottom: 30px;
+}
+.info-contato p{
+    font-size: 25px;
+    margin: 10px 0;
+}
+/*Mapa*/
+.mapa iframe{
+    width:80%; /*ocupa 80% da largura*/
+    height: 400px; /*aturado mapa*/
+    border:0; /*remove borda*/
+}
+/*Responsivo*/
+   
+@media (max-width:600px){
+    .contato{
+        padding: 2px 10px;/*espaço em telas pequenas*/
+    }
+    .contato h1{
+        font-size: 20px;
+    }
+    .contato p{
+        font-size: 14px;
+    }
+    .mapa iframe{
+        width:100%;
+        height: 300px;
+    }
+
+     .conteudo-historia {
+        grid-template-columns: 1fr; 
+        /* empilha no celular */
+    }
+
+    .titulo-historia h1 {
+        font-size: 24px; 
+        /* reduz título */
+    }
+}
+/* ===== SEÇÃO HISTÓRIA ===== */
+
+.historia {
+    background-color: #eee; 
+   
+    color: red; 
+   
+    padding: 40px 20px;
+}
+
+/* ===== TÍTULO ===== */
+
+.titulo-historia {
+    display: flex; 
+    /* coloca tudo na mesma linha */
+
+    align-items: center; 
+    /* alinha verticalmente */
+
+    justify-content: center; 
+    /* centraliza */
+
+    gap: 20px; 
+    /* espaço entre elementos */
+
+    margin-bottom: 40px;
+}
+
+.titulo-historia h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.titulo-historia hr {
+    flex: 1; 
+    /* faz a linha crescer */
+
+    border: none;
+
+    height: 3px;
+
+    background-color: white;
+}
+
+/* ===== CONTEÚDO ===== */
+
+.conteudo-historia {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr; 
+    /* duas colunas: imagem + texto */
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+/* ===== IMAGEM ===== */
+
+.imagem-historia img {
+    width: 300px; 
+    /* ocupa espaço da coluna */
+
+    border-radius: 5px;
+}
+
+/* ===== TEXTO ===== */
+
+.texto-historia p {
+    margin-bottom: 20px;
+
+    line-height: 1.6; 
+    /* melhora leitura */
+
+    font-size: 20px;
+    color: #a8001c;
+}
+
 /*Footer*/
 /*Barra vermelha superior*/
 .barra-alerta{
